@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block title %} Extract text from Image {% endblock%}
+{% block content%}
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                    <div class="col col-md-auto">
+                        {% if msg %}
+                        <h1>{{ msg }}</h1>
+                        {% endif %}
+                    </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                    <div class="col col-md-auto">
+                        <h1>Upload new Image</h1>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                    <div class="col col-md-auto">
+                        <form method="POST", enctype="multipart/form-data">
+                            <p><input type="file", name="file">
+                                <button type="submit" class="btn btn-success", value="Upload">Upload</button> 
+                            </p>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                    <div class="col col-md-auto">
+                        <h3>Results:</h3>
+                        {% if img_src %}
+                            <img src="{{ img_src }}", class="img-fluid", alt="Responsive image">
+                        {% endif %}
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                    <div class="col col-md-auto">
+                        {% if extracted_text %}
+                            <p> The extracted text from the above image is: <br> <b> {{ extracted_text }} </b></p>
+                        {% else %}
+                            The extracted text will be displayed here
+                        {% endif %}
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+{% endblock %}
+
+
+
+
+
