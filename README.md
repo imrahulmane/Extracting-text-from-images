@@ -10,4 +10,4 @@
 ### Demo :
 <br>
 
-[<img src ="https://img.youtube.com/vi/yM2nZ_Ya_Qc/1.jpg" width= "750%">](https://youtu.be/yM2nZ_Ya_Qc)
+[<img src ="https://img.youtube.com/vi/yM2nZ_Ya_Qc/1.jpg" width= "75%">](https://youtu.be/yM2nZ_Ya_Qc)
